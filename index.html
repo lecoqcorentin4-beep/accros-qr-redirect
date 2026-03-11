@@ -20,7 +20,7 @@
 
   <script>
     // lit target.txt puis redirige
-    fetch('target.txt')
+   fetch("target.txt?t=" + Date.now())
       .then(r => r.text())
       .then(target => {
         target = target.trim();
